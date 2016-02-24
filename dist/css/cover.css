@@ -30,7 +30,7 @@ body {
   background-color: #333;
 }
 body {
-  background: #000 url("../../images/background_image.jpg") center center fixed;
+  background: #000 url("../../images/background_image4.jpg") center center fixed;
   width: 100%;
   background-size: cover;
 
@@ -60,6 +60,7 @@ body {
 /* Padding for spacing */
 .inner {
   padding: 2rem;
+  text-shadow: 2px 2px 2px black;
 }
 
 
