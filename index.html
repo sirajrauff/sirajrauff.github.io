@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Site Information -->
     <meta name="description" content="Website of Siraj Rauff">
     <meta name="author" content="Siraj Rauff">
-
     <link rel="icon" href="images/favicon.png">
     <title>Siraj Rauff</title>
 
@@ -17,47 +18,69 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- Custom styles for this template -->
-    <link href="dist/css/cover.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link href="dist/css/index.css" rel="stylesheet">
   </head>
   <body>
 
-    <div class="site-wrapper">
+    <nav class="navbar navbar-fixed-top navbar-dark">
+      <a class="navbar-brand" href="#"><h4>Siraj Rauff</h4></a>
 
-      <div class="site-wrapper-inner">
+      <div class="nav navbar-nav">
+        <a class="nav-item nav-link" href="#">About<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Projects</a>
+        <a class="nav-item nav-link pull-xs-right" href="resume.pdf" download="Siraj_Rauff_Resume.pdf">Resume</a>
+      </div>
+    </nav>
 
-        <div class="cover-container">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
 
-          <!-- <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Siraj Rauff</h3>
-            </div>
-          </div> -->
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Siraj Rauff</h1>
-            <p class="lead">Project Manager.<br>Full-Stack Developer.<br>Gearhead. PC gamer.</p>
-            <p class="lead">
-              <a href="resume.pdf" download="Siraj_Rauff_Resume.pdf" class="btn btn-secondary">Resume</a>
-            </p>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active background-image image0">
+          <div class="carousel-caption">
+            <h3>Software Engineering Student</h3>
+            <p>York University '17</p>
           </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-                <a href="https://ca.linkedin.com/in/siraj-rauff-55b27a58">
-                <i class="fa fa-linkedin-square fa-lg"></i></a>
-                <a href="https://github.com/sirajrauff/"><i class="fa fa-github fa-lg"></i></a>
-                <a href="https://www.facebook.com/sirajrauff"><i class="fa fa-facebook-official fa-lg"></i></a>
-                <a href="https://twitter.com/SirajRauff"><i class="fa fa-twitter fa-lg"></i></a>
-                <a href="mailto:sirajrauff@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
-                <div class="footer">© Siraj Rauff. All Rights Reserved.</div>
-            </div>
-          </div>
-
         </div>
-
+        <div class="carousel-item background-image image1">
+          <div class="carousel-caption">
+            <h3>Full-Stack Web Developer</h3>
+            <p>Student Information Systems, York University</p>
+          </div>
+        </div>
+        <div class="carousel-item background-image image2">
+          <div class="carousel-caption">
+            <h3>Test Caption2</h3>
+            <p>Test Description 2</p>
+          </div>
+        </div>
       </div>
 
+      <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="mastfoot">
+      <div class="inner">
+          <a href="https://ca.linkedin.com/in/siraj-rauff-55b27a58">
+          <i class="fa fa-linkedin-square fa-lg"></i></a>
+          <a href="https://github.com/sirajrauff/"><i class="fa fa-github fa-lg"></i></a>
+          <a href="https://www.facebook.com/sirajrauff"><i class="fa fa-facebook-official fa-lg"></i></a>
+          <a href="https://twitter.com/SirajRauff"><i class="fa fa-twitter fa-lg"></i></a>
+          <a href="mailto:sirajrauff@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
+          <div class="footer">© Siraj Rauff. All Rights Reserved.</div>
+      </div>
     </div>
 
     <!-- jQuery first, then Bootstrap JS. -->
