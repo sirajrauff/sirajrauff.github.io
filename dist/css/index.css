@@ -1,44 +1,22 @@
 /*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #333;
-}
-
-.carousel, .active, .carousel-inner { height:100%; }
-
-.image0 {
-  background: url(../../images/background_image0.jpg) no-repeat center center fixed;
-}
-.image1 {
-  background: url(../../images/background_image1.jpg) no-repeat center center fixed;
-}
-.image2 {
-  background: url(../../images/background_image2.jpg) no-repeat center center fixed;
-}
-
-.background-image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-}
-
-
-/*
  * Header
  */
-
 .navbar {
   margin-bottom: 2rem;
   background-color: rgba(0,0,0,.75);
 }
 
+/*
+ * Overlay
+ */
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  bottom: 15%;
+  color: #fff;
+  text-align: center;
+}
 
 /*
  * Footer
@@ -48,8 +26,6 @@ body {
   width: 100%;
   padding: 2rem;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
   position: fixed;
   bottom: 0;
 }
@@ -61,50 +37,4 @@ body {
 .mastfoot a:focus,
 a:hover {
   color: #ffffff;
-}
-
-.carousel-indicators {
-  bottom: 10%;
-}
-.carousel-caption {
-  bottom: 35%;
-}
-
-@media (min-width:34em) {
-  .carousel-caption {
-    bottom: 20%;
-  }
-}
-
-@media (max-width: 37.4em) {
-  .carousel-indicators {
-    display: none;
-  }
-}
-
-@media (min-width: 37.5em) {
-  .carousel-indicators {
-    bottom: 8%;
-  }
-  .carousel-caption {
-    bottom: 10%;
-  }
-}
-
-@media (min-width: 48em) {
-  .carousel-indicators {
-    bottom: 10%;
-  }
-  .carousel-caption {
-    bottom: 10%;
-  }
-}
-
-@media (min-width: 62em) {
-  .carousel-indicators {
-    bottom: 8%;
-  }
-  .carousel-caption {
-    bottom: 10%;
-  }
 }
