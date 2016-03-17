@@ -33,6 +33,7 @@
 /* Footer Links */
 .mastfoot a {
   color: #cccccc;
+  margin: .5em;
 }
 .mastfoot a:focus,
 a:hover {
