@@ -51,14 +51,6 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
-.carousel-caption {
-  bottom: 15%;
-}
-
-.carousel-indicators {
-  bottom: 10%;
-}
-
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -114,24 +106,40 @@ body {
  * Footer
  */
 .mastfoot {
-  /*color: rgba(255,255,255,.5);*/
+  color: rgb(255,255,255);
   width: 100%;
   padding: 2rem;
   text-align: center;
-  text-shadow: 2px 2px 2px black;
   margin-right: auto;
   margin-left: auto;
+  position: fixed;
+  bottom: 0;
 }
 
-@media (min-width: 40em) {
+.carousel-indicators {
+  bottom: 10%;
+}
+.carousel-caption {
+  bottom: 35%;
+}
+
+@media (min-width:34em) {
+  .carousel-caption {
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 37.4em) {
+  .carousel-indicators {
+    display: none;
+  }
+}
+
+@media (min-width: 37.5em) {
   /* Pull out the header and footer */
   .navbar {
     position: fixed;
     top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -139,9 +147,14 @@ body {
   }
   /* Handle the widths */
   .navbar,
-  .mastfoot,
-  .cover-container {
+  .mastfoot {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  .carousel-indicators {
+    bottom: 8%;
+  }
+  .carousel-caption {
+    bottom: 10%;
   }
 }
 
@@ -155,10 +168,10 @@ body {
 }
 
 @media (min-width: 62em) {
-  .navbar,
-  .mastfoot,
-  .cover-container {
-    width: 100%;
-    /*width: 42rem;*/
+  .carousel-indicators {
+    bottom: 8%;
+  }
+  .carousel-caption {
+    bottom: 10%;
   }
 }
